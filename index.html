@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Locks the viewport to behave like a native mobile app, preventing pinch-to-zoom on the webpage itself -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Cortex Workflow - Fullscreen Mobile</title>
+    
+    <style>
+        /* Reset all margins and padding, ensure no scrollbars */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            /* Fallback for older browsers */
+            height: 100vh;
+            /* Dynamic viewport height perfectly accounts for mobile browser address bars collapsing/expanding */
+            height: 100dvh; 
+            overflow: hidden;
+            background-color: #000;
+            
+            /* Prevents native mobile browser gestures like pull-to-refresh or back/forward swiping */
+            overscroll-behavior: none;
+            touch-action: none; 
+        }
+
+        /* Ensure the iframe fills the entire viewport without any borders */
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block; 
+        }
+    </style>
+</head>
+<body>
+
+    <iframe src="https://embed.figma.com/design/GgpNFmHYxipJQgV9lJ7oQY/Cortex-Workflow?node-id=1-2&embed-host=share&hide-ui=true&footer=false&theme=dark&t=qgx2ctUnrPeyDq3S-1" allowfullscreen></iframe>
+
+</body>
+</html>
